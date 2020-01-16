@@ -29,7 +29,7 @@ func outputTestRunner(t *testing.T, group string, tests []outputTest, fileLevel,
 	}
 	defer fs.RemoveAll(baseFolder)
 
-	log.Setup(fs.Path(baseFolder), "blockchain", 2, 1)
+	log.Setup(fs.Path(baseFolder), "mysufix", 2, 1)
 	defer log.TearDown()
 
 	var buffer bytes.Buffer
@@ -47,7 +47,7 @@ func outputTestRunner(t *testing.T, group string, tests []outputTest, fileLevel,
 	screen.Flush()
 	screenContent := buffer.String()
 
-	logfile := fs.Path(baseFolder).Join("blockchain.log")
+	logfile := fs.Path(baseFolder).Join("mysufix.log")
 
 	// small trick to make sure the file exists even no log is written
 	if !logfile.FileExists() {
@@ -90,7 +90,7 @@ func collectLog(t *testing.T, handler func()) (string, string) {
 	}
 	defer fs.RemoveAll(baseFolder)
 
-	log.Setup(fs.Path(baseFolder), "blockchain", 2, 1)
+	log.Setup(fs.Path(baseFolder), "mysufix", 2, 1)
 	defer log.TearDown()
 
 	log.SetFileLevel(log.LevelDebug)
@@ -106,7 +106,7 @@ func collectLog(t *testing.T, handler func()) (string, string) {
 
 	screen.Flush()
 
-	logfile := path.Join(baseFolder, "blockchain.log")
+	logfile := path.Join(baseFolder, "mysufix.log")
 	b, err := fs.ReadAll(logfile)
 	if err != nil {
 		t.Errorf("error reading file '%s': %v", logfile, err)
