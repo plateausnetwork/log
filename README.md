@@ -37,8 +37,8 @@ func myFunc() {
   logRotateMinutes := 5
   
   // loggin setup
-	log.Setup(path, "mysufix", logPurgeMinutes, logRotateMinutes)
-	defer log.TearDown()
+  log.Setup(path, "mysufix", logPurgeMinutes, logRotateMinutes)
+  defer log.TearDown()
 }
 
 ```
