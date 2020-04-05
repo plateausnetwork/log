@@ -15,6 +15,8 @@ type F = logrus.Fields
 // To actually register the information on the logger use the Debug, Info, Warn or Error
 // methods.
 func With(fields F) *Entry {
+	loggerLock.RLock()
+	defer loggerLock.RUnlock()
 	return &Entry{inner: logger.WithFields(fields)}
 }
 
