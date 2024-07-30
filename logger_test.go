@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/rhizomplatform/fs"
-	"github.com/rhizomplatform/log"
+	"github.com/plateausnetwork/fs"
+	"github.com/plateausnetwork/log"
 )
 
 func TestLoggerSingleton(t *testing.T) {

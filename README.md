@@ -26,8 +26,8 @@ To run the tests, try `go test`.
 
 ```go
 import (
-  "github.com/rhizomplatform/fs"
-  "github.com/rhizomplatform/log"
+  "github.com/plateausnetwork/fs"
+  "github.com/plateausnetwork/log"
 )
 
 func myFunc() {

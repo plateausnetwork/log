@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rhizomplatform/log"
+	"github.com/plateausnetwork/log"
 )
 
 func TestWithEntry(t *testing.T) {

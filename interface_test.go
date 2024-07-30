@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	pkgerr "github.com/pkg/errors"
-	"github.com/rhizomplatform/fs"
-	"github.com/rhizomplatform/log"
+	"github.com/plateausnetwork/fs"
+	"github.com/plateausnetwork/log"
 )
 
 type outputTest struct {

@@ -3,7 +3,7 @@ package log_test
 import (
 	"testing"
 
-	"github.com/rhizomplatform/log"
+	"github.com/plateausnetwork/log"
 )
 
 func TestLevelString(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/sirupsen/logrus"
 
-	"github.com/rhizomplatform/fs"
+	"github.com/plateausnetwork/fs"
 )
 
 var (
